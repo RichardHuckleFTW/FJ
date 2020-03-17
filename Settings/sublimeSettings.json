@@ -1,0 +1,32 @@
+{
+	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme",
+	"detect_indentation": false,
+	"draw_white_space": "all",
+	"font_face": "Menlo",
+	"font_size": 14.8,
+	"ignored_packages":
+	[
+		"Rust"
+	],
+	"save_on_focus_lost": true,
+	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
+
+
+
+
+
+[
+	{
+    "keys": ["j", "j"],
+    "command": "exit_insert_mode",
+    "context":
+    [
+        { "key": "setting.command_mode", "operand": false },
+        { "key": "setting.is_widget", "operand": false }
+    ]
+},{ "keys": ["ctrl+shift+s"], "command": "auto_save" }
+]
+

@@ -1,0 +1,50 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    autoHideMenuBar: true
+    colorProfile: "srgb"
+    disabledPackages: [
+      "autocomplete-atom-api"
+      "autocomplete-css"
+      "autocomplete-html"
+      "autocomplete-plus"
+      "autocomplete-snippets"
+      "background-tips"
+      "command-palette"
+      "image-view"
+      "tabs"
+      "about"
+      "archive-view"
+      "bookmarks"
+      "dalek"
+      "deprecation-cop"
+      "dev-live-reload"
+      "welcome"
+      "tree-view"
+      "snippets"
+      "status-bar"
+    ]
+    packagesWithKeymapsDisabled: [
+      "editor-background"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "crispy-realization-syntax"
+    ]
+  editor:
+    confirmCheckoutHeadRevision: false
+    fontFamily: "Menlo"
+    fontSize: 19
+    invisibles: {}
+    scrollPastEnd: true
+  "editor-background":
+    image:
+      overlayColor: "#000000"
+    other:
+      transparentTabBar: false
+  "exception-reporting":
+    userId: "85d0578a-1d05-42e4-b634-f9ca37454545"
+  welcome:
+    showOnStartup: false

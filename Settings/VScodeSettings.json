@@ -1,0 +1,37 @@
+{
+  "workbench.editor.showTabs": true,
+  "workbench.editor.tabSizing": "shrink",
+  "editor.fontSize": 19,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Menlo",
+  "editor.fontWeight": "normal",
+  "javascript.suggest.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnType": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.occurrencesHighlight": false,
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#ffffff",
+    "editorCursor.background": "#685f5f",
+    "editor.selectionBackground": "#434350",
+    "editor.selectionHighlightBackground": "#424141"
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "workbench.statusBar.visible": false,
+  "extensions.ignoreRecommendations": true,
+  "workbench.activityBar.visible": false,
+  "editor.cursorStyle": "line-thin",
+  "window.menuBarVisibility": "toggle",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false
+}

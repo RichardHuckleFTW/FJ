@@ -1,0 +1,4 @@
+UI Theme: One Dark
+Syntax Theme: Crispy Realization
+Packages: 
+  atom-bracket-highlight;
