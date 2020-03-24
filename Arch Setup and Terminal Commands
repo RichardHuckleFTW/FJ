@@ -1,0 +1,19 @@
+--------------System Update and Upgrade----------------------
+sudo pacman -Syyu
+---------------Yaourt----------------------------------------
+sudo pacman -S --needed base-devel git wget yajl
+cd /tmp
+git clone https://aur.archlinux.org/package-query.git
+cd package-query/
+makepkg -si && cd /tmp/
+git clone https://aur.archlinux.org/yaourt.git
+cd yaourt/
+makepkg -si
+--------------Wireless Card----------------------------------
+git clone https://aur.archlinux.org/rtl8821ce-dkms-git.git 
+cd rtl8821ce-dkms-git
+sudo pacman -S linux-headers
+-------------Pacman Commands--------------------------------
+Remove Package and Dependencies: pacman -Rs <package_name>
+Install Package : pacman -S <package_name>
+Search for Package: pacman -Ss <keyword>
