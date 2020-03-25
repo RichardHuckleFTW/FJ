@@ -1,10 +1,8 @@
 call plug#begin('~/.vim/plugged')
-Plug 'rust-lang/rust.vim'
 call plug#end()
 set termguicolors
 set background=dark
 let g:gruvbox_contrast_dark='hard'
-colorscheme gruvbox
 set number
 inoremap jj <ESC>
 inoremap <c-c> <ESC>
