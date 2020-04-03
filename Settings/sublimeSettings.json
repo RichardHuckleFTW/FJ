@@ -15,18 +15,14 @@
 }
 
 
-
-
-
-[
-	{
-    "keys": ["j", "j"],
+{
+  "keys": ["j", "j"],
     "command": "exit_insert_mode",
     "context":
     [
-        { "key": "setting.command_mode", "operand": false },
-        { "key": "setting.is_widget", "operand": false }
+      { "key": "setting.command_mode", "operand": false },
+      { "key": "setting.is_widget", "operand": false }
     ]
-},{ "keys": ["ctrl+shift+s"], "command": "auto_save" }
-]
+}
+
 
