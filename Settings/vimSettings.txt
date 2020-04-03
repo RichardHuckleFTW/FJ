@@ -1,9 +1,9 @@
 call plug#begin('~/.vim/plugged')
 call plug#end()
-set termguicolors
 set background=dark
-let g:gruvbox_contrast_dark='hard'
 set number
+set relativenumber
+set autoindent
 inoremap jj <ESC>
 inoremap <c-c> <ESC>
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
