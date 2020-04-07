@@ -14,7 +14,7 @@ git clone https://aur.archlinux.org/rtl8821ce-dkms-git.git
 cd rtl8821ce-dkms-git
 sudo pacman -S linux-headers
 -------------Pacman Commands--------------------------------
-Remove Unneeded Dependencies: pacman - {Syy,Scc,Suu}
+Remove Unneeded Dependencies: pacman - {Syy,Scc,Suu} //// pacman -Rns $(pacman -Qtdq)
 Remove Package and Dependencies: pacman -Rscnd <package>
 Install Package : pacman -S <package_name>
 Search for Package: pacman -Ss <keyword>
