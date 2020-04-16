@@ -1,10 +1,15 @@
 call plug#begin('~/.vim/plugged')
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'pangloss/vim-javascript'
+Plug 'jiangmiao/auto-pairs'
+Plug 'dylanaraps/wal.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 set background=dark
 set number
-set relativenumber
 set autoindent
 inoremap jj <ESC>
-inoremap <c-c> <ESC>
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
-
+let g:rust_recommended_style = 0
+let g:airline#extensions#tabline#formatter = 'default'
