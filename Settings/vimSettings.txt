@@ -1,15 +1,22 @@
+let mapleader =" "
 call plug#begin('~/.vim/plugged')
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'pangloss/vim-javascript'
-Plug 'jiangmiao/auto-pairs'
-Plug 'dylanaraps/wal.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+  Plug 'vim-scripts/auto-pairs-gentle'
+  Plug 'dylanaraps/wal'
+  Plug 'morhetz/gruvbox'
+  "Plug 'valloric/youcompleteme'
 call plug#end()
-set background=dark
+nnoremap <C-L> gt
+nnoremap <C-H> gT
+colorscheme wal
+set smartindent
+set bg=dark
 set number
-set autoindent
 inoremap jj <ESC>
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
-let g:rust_recommended_style = 0
-let g:airline#extensions#tabline#formatter = 'default'
+set expandtab 
+set tabstop=2 
+set softtabstop=2 
+set shiftwidth=2
+set splitbelow
+set splitright
+set formatoptions-=cro
+"colorscheme gruvbox
