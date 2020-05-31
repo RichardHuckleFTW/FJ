@@ -1,15 +1,23 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
-	"theme": "Adaptive.sublime-theme",
-  "detect_indentation": false,
+	"block_caret": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/10% Too Dull for My Tastes Color Scheme/scotchy.tmTheme",
+	"detect_indentation": false,
 	"draw_white_space": "all",
 	"font_face": "Menlo",
-	"font_size": 15.8,
+	"font_size": 16,
+	"gutter": true,
+	"ignored_packages": [],
+	"margin": 8,
 	"save_on_focus_lost": true,
 	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
-  "ignored_packages":[],
-  "vintage_start_in_command_mode": true,
+	"trim_trailing_white_space_on_save": true
+}
+
+{
+  "background-color": '#0d0d0d';
 }
 
 [
