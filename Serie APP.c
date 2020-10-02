@@ -50,7 +50,7 @@ int main(void) {
     //1: risque moyen
 
   //solution avec fonction
-    int level = verify_client(height, weight, dob, ic, at, dsv);
+    int level = verifyClient(height, weight, dob, ic, at, dsv);
     
   //solution sans fonction:
   /*
