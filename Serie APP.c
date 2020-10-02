@@ -56,7 +56,7 @@ int main(void) {
   /*
 
   
-    int level = 2;
+    int level;
     float imc = (float) weight / (float) (height * height);
     if(ic == 1 || at == 1 || dsv >= 2) {
       level =  0;
