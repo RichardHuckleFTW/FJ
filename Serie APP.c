@@ -47,7 +47,6 @@ int main(void) {
   //level:
     //0: refusé
     //1: risque moyen
-    //2: faible risque
 
   //solution avec fonction
     int level = verify_client(height, weight, dob, ic, at, dsv);
