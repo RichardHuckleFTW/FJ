@@ -1,7 +1,8 @@
 #include "stdio.h"
 
 int verifyClient(int height, float weight, int dob, int ic, int at, int dsv) {
-  float imc = (float) weight / (float) (height * height); if(ic == 1 || at == 1 || dsv >= 2) {
+  float imc = (float) weight / (float) (height * height);
+  if(ic == 1 || at == 1 || dsv >= 2) {
     return 0;
   } else if(2020 - dob >= 50 || dsv == 1 || (imc < 16.5 || imc > 30)) {
     return 1;
