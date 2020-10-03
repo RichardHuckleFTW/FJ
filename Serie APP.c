@@ -81,12 +81,12 @@ int main(void) {
 
   if(tarif_final1 <= budget) {
     printf("Niveau 1: maximum de prestatoins remboursées = 3000 DT, tarif de cotisation total = %f\n", tarif_final1);
-  } else if(tarif_final2 <= budget) {
+  } 
+  if(tarif_final2 <= budget) {
     printf("Niveau 2: maximum de prestatoins remboursées = 3500, tarif de cotisation total = %f\n", tarif_final2);
-  } else if(tarif_final3 <= budget) {
+  }
+  if(tarif_final3 <= budget) {
     printf("Niveaux 3: maximu de prestatoins rembooursées = 5000, tarif de cotisation total =  %f\n", tarif_final3);
-  } else {
-    printf("Pas d'option");
   }
 
   printf("\nVeuillez choisir le niveau de prestations souhaité: ");
