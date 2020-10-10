@@ -104,3 +104,46 @@ petits qu'un chewing-gum et sont compatibles avec les protocoles de communicatio
 NVMe, sans oublier les ports USB qui connectent tous vos périphériques.
 
 Notez que les slots PCIe sont à la fois parallèles et série, ce qui explique les vitesses astronomiques que ces slots peuvent atteindre!
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+SSD, disque dur, SSHD
+
+Le disque dur est une solution de stockage qui existe depuis des années maintenant, un disque dur est un matériel mécanique qui stocke et récupère les 
+données numériques de manière magnétique. Les SSD de l'autre moitié sont des périphériques de stockage qui stockent les données de manière électronique 
+et n'ont pas de pièces mobiles pour remplir cette tâche!
+
+Les disques durs ont une capacité supérieure tandis que les disques SSD sont plus reconnus pour des vitesses de lecture et d'écriture plus rapides. Et 
+bien que les prix des disques SSD aient baissé au cours des dernières années, le prix par giga octet par rapport aux disques durs est toujours beaucoup 
+plus élevé. La fiabilité, ça dépend. La plupart des disques durs sont très sensibles aux chocs et pourraient facilement endommager leurs composants 
+internes et les rendre inutilisables à cause de cela. D'un autre côté, l'écriture permanente de beaucoup de données sur un SSD peut mettre en péril 
+l'endurance et la durabilité à long terme de votre SSD.
+
+
+
+Le SSHD est un autre périphérique de stockage qui combine simplement à la fois les avantages des SDD en termes de vitesse et de latence réduite, et 
+les avantages des disques durs en termes de capacité.
+
+
+Composants du disque dur:
+
+la tête de lecture et d'écriture est un morceau de métal qui permet l'extraction et le stockage de données hors et dans le disque dur
+
+Le plateau est une forme circulaire de type DVD sur laquelle les données numériques sont stockées ou extraites. Il est généralement recouvert 
+d'une couche magnétisée pour garantir que les données resteraient collées et ne disparaîtraient pas.
+
+Un secteur dans un disque dur est la plus petite unité possible sur la surface du plateau qui pourrait être écrite ou lue par la tête de lecture 
+et d'écriture!
+
+
+Une piste dans un disque dur est chaque assemblage de secteurs qui forment un sous-cercle à la surface de chaque plateau
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
