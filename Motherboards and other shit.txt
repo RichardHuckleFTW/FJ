@@ -1,60 +1,106 @@
 Rôle et définition
 Souvent, un processeur ou une unité centrale de traitement est appelé le cerveau de l'ordinateur, la carte mère est appelée son épine dorsale.
 La carte mère est un composant fondamental du matériel informatique, responsable d'une variété de fonctionnalités clés, dont les plus importantes sont:
-1) La mise à disposition d'une plate-forme composée de cartes de circuits imprimés permettant à d'autres parties d'un ordinateur de communiquer et de partager des données entre elles.
-2) Redirection en douceur de la tension vers les différents composants qui se montent sur ses fentes grâce à l'électronique qui y est soudée comme des condensateurs et des résistances.
+1) La mise à disposition d'une plate-forme composée de cartes de circuits imprimés permettant à d'autres parties d'un ordinateur de communiquer et de partager 
+des données entre elles.
+2) Redirection en douceur de la tension vers les différents composants qui se montent sur ses fentes grâce à l'électronique qui y est soudée comme des 
+condensateurs et des résistances.
 
 
 
 Caractéristiques:
 
-1. ATX, BTX, ITX et ainsi de suite sont des termes qui réfèrent non seulement aux caractéristiques dimensionnelles d'une carte mère, mais aussi à son niveau de compatibilité avec d'autres composants prenant en charge le facteur de forme comme les boîtiers d'alimentation et les boîtiers PC et le nombre de ports et de slots . L'un des facteurs de forme de carte mère les plus connus est ATX, qui se décline en une variété de saveurs différentes: nous avons "ATX standard", "Micro ATX", "ATX étendu", "XL-ATX" et "Mini ATX" pour n'en nommer que quelques-uns. ITX arrive au deuxième rang en termes de familiarité, ces cartes se distinguent par leur taille relativement petite et compacte, avec une quantité réduite de slots et d'interfaces pour les restrictions de taille. Certaines mentions honorables sont des cartes mères qui existent dans les téléphones et les ordinateurs portables qui ont probablement tous leurs composants soudés!
-Les cartes ATX sont principalement conçues pour s'intégrer dans une machine de bureau, alors que ITX peut également être utilisé de la même manière, ses cas d'utilisation sont plus orientés et adaptés aux ordinateurs portables!
+1. ATX, BTX, ITX et ainsi de suite sont des termes qui réfèrent non seulement aux caractéristiques dimensionnelles d'une carte mère, mais aussi à son niveau 
+de compatibilité avec d'autres composants prenant en charge le facteur de forme comme les boîtiers d'alimentation et les boîtiers PC et le nombre de ports et 
+de slots . L'un des facteurs de forme de carte mère les plus connus est ATX, qui se décline en une variété de saveurs différentes: nous avons "ATX standard", 
+"Micro ATX", "ATX étendu", "XL-ATX" et "Mini ATX" pour n'en nommer que quelques-uns. ITX arrive au deuxième rang en termes de familiarité, ces cartes se 
+distinguent par leur taille relativement petite et compacte, avec une quantité réduite de slots et d'interfaces pour les restrictions de taille. Certaines 
+mentions honorables sont des cartes mères qui existent dans les téléphones et les ordinateurs portables qui ont probablement tous leurs composants soudés!
+Les cartes ATX sont principalement conçues pour s'intégrer dans une machine de bureau, alors que ITX peut également être utilisé de la même manière, ses cas 
+d'utilisation sont plus orientés et adaptés aux ordinateurs portables!
 
 
 
 Chipsets:
-Avoir plusieurs composants qui parlent et communiquent avec chacun n'est pas une tâche compliquée, mais il doit y avoir un mécanisme en place pour réguler et gérer ces trafics de données!
-Un chipset est un composant électronique, une puce soudée dans n'importe quelle carte mère qui gère le trafic des 0 et 1 voyageant à travers l'ordinateur d'un endroit à un autre où il agit comme un hub de communication! Il peut également dicter la compatibilité avec d'autres cartes graphiques, processeurs, modules RAM, disques durs, le niveau de mise à niveau du système et même "Overclocking".
+Avoir plusieurs composants qui parlent et communiquent avec chacun n'est pas une tâche compliquée, mais il doit y avoir un mécanisme en place pour réguler et 
+gérer ces trafics de données!
+Un chipset est un composant électronique, une puce soudée dans n'importe quelle carte mère qui gère le trafic des 0 et 1 voyageant à travers l'ordinateur d'un 
+endroit à un autre où il agit comme un hub de communication! Il peut également dicter la compatibilité avec d'autres cartes graphiques, processeurs, modules 
+RAM, disques durs, le niveau de mise à niveau du système et même "Overclocking".
 Il existe deux chipsets, le "South Bridge" ou puce sud et le "North Bridge" ou bateau nord!
-Le navire nord est un navire qui est directement connecté au processeur et gère les communications à très haute vitesse et connecte le processeur à d'autres composants sensibles aux performances comme la mémoire système et les cartes graphiques, le navire sud est en revanche un navire responsable de la supervision. des composants moins déchirés qui ne sont pas aussi performants tels que les disques durs, les connecteurs du panneau avant comme les prises USB ou de volume, les emplacements PCI, les cartes réseau, etc.
-De nos jours, certaines nouvelles cartes mères haut de gamme sont livrées avec un seul chipset qui prend en charge les fonctionnalités des puces sud et nord, économisant non seulement de l'espace mais aussi de la latence!
+Le navire nord est un navire qui est directement connecté au processeur et gère les communications à très haute vitesse et connecte le processeur à d'autres 
+composants sensibles aux performances comme la mémoire système et les cartes graphiques, le navire sud est en revanche un navire responsable de la supervision. 
+des composants moins déchirés qui ne sont pas aussi performants tels que les disques durs, les connecteurs du panneau avant comme les prises USB ou de volume, 
+les emplacements PCI, les cartes réseau, etc.
+De nos jours, certaines nouvelles cartes mères haut de gamme sont livrées avec un seul chipset qui prend en charge les fonctionnalités des puces sud et nord, 
+économisant non seulement de l'espace mais aussi de la latence!
 
 
 Bios:
 
-Le BIOS signifie «Basic Input Output System», c'est un logiciel très spécialisé qui se trouve au cœur de la mémoire ROM de l'ordinateur, indiquant qu'il s'agit d'une partie très vitale du système.
+Le BIOS signifie «Basic Input Output System», c'est un logiciel très spécialisé qui se trouve au cœur de la mémoire ROM de l'ordinateur, indiquant qu'il s'agit 
+d'une partie très vitale du système.
 Un BIOS est fait pour prendre en charge une variété de tâches, dont les plus importantes sont:
-1) L'initialisation et le test de tout le matériel présent dans le système et leur identification en veillant à ce qu'aucune erreur ne soit détectée qui pourrait planter ou instabiliser le système, la partie test se fait par un processus appelé POST ("Power On Self Test") assurez-vous que tous les composants fonctionnent correctement!
-2) Une fois le système mis en vie, le BIOS recherchera un périphérique amorçable comme un lecteur USB ou un lecteur de stockage contenant un système d'exploitation, puis transmettra le contrôle de l'ordinateur au système d'exploitation!
-Le BIOS est livré avec une interface utilisateur qui est sûre de dire ancienne et pas si agréable à l'œil, contrairement à son successeur plus moderne UEFI ("Unified Extensable Firmware Interface") qui diffère du BIOS en termes d'interface utilisateur permettant à l'utilisateur de même Utilisez une souris pour naviguer dans les paramètres le long des côtés offrant des fonctionnalités sophistiquées telles que des graphiques et des animations. UEFI fournit également de nombreuses autres fonctionnalités système sentriques telles qu'une meilleure compatibilité avec des éléments tels que la RAM et les disques durs qu'il est capa
+1) L'initialisation et le test de tout le matériel présent dans le système et leur identification en veillant à ce qu'aucune erreur ne soit détectée qui pourrait 
+planter ou instabiliser le système, la partie test se fait par un processus appelé POST ("Power On Self Test") assurez-vous que tous les composants fonctionnent 
+correctement!
+2) Une fois le système mis en vie, le BIOS recherchera un périphérique amorçable comme un lecteur USB ou un lecteur de stockage contenant un système 
+d'exploitation, puis transmettra le contrôle de l'ordinateur au système d'exploitation!
+Le BIOS est livré avec une interface utilisateur qui est sûre de dire ancienne et pas si agréable à l'œil, contrairement à son successeur plus moderne UEFI 
+("Unified Extensable Firmware Interface") qui diffère du BIOS en termes d'interface utilisateur permettant à l'utilisateur de même Utilisez une souris pour 
+naviguer dans les paramètres le long des côtés offrant des fonctionnalités sophistiquées telles que des graphiques et des animations. UEFI fournit également 
+de nombreuses autres fonctionnalités système sentriques telles qu'une meilleure compatibilité avec des éléments tels que la RAM et les disques durs qu'il est 
+capa
 
 
 
 
 Pile CMOS:
 
-La batterie CMOS est une source d'alimentation qui maintient un composant sur une carte mère appelé puce CMOS opérationnel 24h / 24 et 7j / 7, même si tout le système est branché au mur. Cette batterie est souvent fabriquée en forme de cercle, la retirer et la remettre en place effacera simplement le contenu du cmos et le restaurera aux paramètres d'usine qui sont préinstallés la première fois que vous démarrez un ordinateur!
-CMOS, d'autre part, est également un type statique de mémoire soudée sur la carte mère qui stocke les modifications utilisateur auxquelles les paramètres initiaux du BIOS ont été soumis, cela inclut les vitesses de ventilateur, les modes de stockage ou les protocoles (AHCI, NVMe, etc.), heure, date, lieu, lecteur de démarrage natif, etc ...
+La batterie CMOS est une source d'alimentation qui maintient un composant sur une carte mère appelé puce CMOS opérationnel 24h / 24 et 7j / 7, 
+même si tout le système est branché au mur. Cette batterie est souvent fabriquée en forme de cercle, la retirer et la remettre en place effacera 
+simplement le contenu du cmos et le restaurera aux paramètres d'usine qui sont préinstallés la première fois que vous démarrez un ordinateur!
+CMOS, d'autre part, est également un type statique de mémoire soudée sur la carte mère qui stocke les modifications utilisateur auxquelles les 
+paramètres initiaux du BIOS ont été soumis, cela inclut les vitesses de ventilateur, les modes de stockage ou les protocoles (AHCI, NVMe, etc.), 
+heure, date, lieu, lecteur de démarrage natif, etc ...
 
 
 Bus & interfaces:
 
-Les informations voyageant à travers une carte mère d'un composant à un autre sont conduites à travers ce qu'on appelle un BUS, c'est l'autoroute sur laquelle les données voyagent d'une interface à une autre.
+Les informations voyageant à travers une carte mère d'un composant à un autre sont conduites à travers ce qu'on appelle un BUS, c'est 
+l'autoroute sur laquelle les données voyagent d'une interface à une autre.
 Les interfaces sont un moyen de régir la manière dont ces données seront traitées, stockées, reçues et envoyées!
 
 Il existe une variété de types de BUS et d'interfaces sur une carte mère
-Le socket d'un processeur est un type d'interface qui connecte le processeur à la carte mère et à d'autres ressources informatiques en conséquence! Il existe plusieurs types de prises:
-1) LGA: le type de prise qui a des broches sur sa surface. Au lieu de cela, le processeur a des plages de contact électriques. Ceci est considéré comme le type de socket moderne avec lequel presque tous les processeurs INTEL sont compatibles, car il garantit que le processeur ne sera pas endommagé ou que l'une de ses broches ne sera pas pliée, ce qui le rendra inopérant!
-2) PGA: ce type de sockets est tout le contraire du PGA et considéré comme un moyen plus old school / traditionnel de monter des processeurs, il est également jugé très risqué et enclin à endommager le processeur!
-Certaines spécifications de prises de carte mère sur le marché mentionnent des modèles comme "LGA-2011" ou "LGA-1156". Les chiffres indiquent simplement le nombre de broches présentes sur la prise!
+Le socket d'un processeur est un type d'interface qui connecte le processeur à la carte mère et à d'autres ressources informatiques en conséquence! 
+Il existe plusieurs types de prises:
+1) LGA: le type de prise qui a des broches sur sa surface. Au lieu de cela, le processeur a des plages de contact électriques. Ceci est considéré 
+comme le type de socket moderne avec lequel presque tous les processeurs INTEL sont compatibles, car il garantit que le processeur ne sera pas endommagé 
+ou que l'une de ses broches ne sera pas pliée, ce qui le rendra inopérant!
+2) PGA: ce type de sockets est tout le contraire du PGA et considéré comme un moyen plus old school / traditionnel de monter des processeurs, il est 
+également jugé très risqué et enclin à endommager le processeur!
+Certaines spécifications de prises de carte mère sur le marché mentionnent des modèles comme "LGA-2011" ou "LGA-1156". Les chiffres indiquent simplement 
+le nombre de broches présentes sur la prise!
 
-De manière générale maintenant, les connecteurs autrefois incorporaient une technologie de communication qui échange des données de manière parallèle, ce qui rendait beaucoup de vieux connecteurs très gros et encombrants et occupait beaucoup de place pour la quantité importante de broches qui transfèrent des données. autour. A titre d'exemple on peut citer les câbles IDE, les slots PCI, les slots AGP, les câbles IEEE 1284, etc ....
-Bien que le parallélisme semble être un bon moyen de partager des données simultanément, en pratique, la technologie a beaucoup souffert en raison de deux défauts de conception majeurs:
-1) Ces interfaces avaient besoin de toutes les lignes de données pour envoyer et recevoir les données correctes simultanément. Donc, pomper de plus en plus de données à travers ces lignes de données signifie qu'il devient de plus en plus difficile pour ces lignes de données de rester synchronisées.Par conséquent, le port a dû ralentir le flux de données pour attendre que tous les bits correspondent, diminuant les avantages de parallélisme tous ensemble!
-2) "CrossTalk", c'est quand il y a une interférence entre les lignes de données électriquement. Comme les lignes de données sont si proches les unes des autres, les signaux qui y sont envoyés peuvent finir par changer et inverser les bits des lignes de données qui leur sont adjacentes à cause des ondes magnétiques générées par la circulation de l'électricité rendant les données inutiles!
+De manière générale maintenant, les connecteurs autrefois incorporaient une technologie de communication qui échange des données de manière parallèle, 
+ce qui rendait beaucoup de vieux connecteurs très gros et encombrants et occupait beaucoup de place pour la quantité importante de broches qui transfèrent 
+des données. autour. A titre d'exemple on peut citer les câbles IDE, les slots PCI, les slots AGP, les câbles IEEE 1284, etc ....
+Bien que le parallélisme semble être un bon moyen de partager des données simultanément, en pratique, la technologie a beaucoup souffert en raison de deux 
+défauts de conception majeurs:
+1) Ces interfaces avaient besoin de toutes les lignes de données pour envoyer et recevoir les données correctes simultanément. Donc, pomper de plus en plus 
+de données à travers ces lignes de données signifie qu'il devient de plus en plus difficile pour ces lignes de données de rester synchronisées.Par conséquent, 
+le port a dû ralentir le flux de données pour attendre que tous les bits correspondent, diminuant les avantages de parallélisme tous ensemble!
+2) "CrossTalk", c'est quand il y a une interférence entre les lignes de données électriquement. Comme les lignes de données sont si proches les unes des autres, 
+les signaux qui y sont envoyés peuvent finir par changer et inverser les bits des lignes de données qui leur sont adjacentes à cause des ondes magnétiques 
+générées par la circulation de l'électricité rendant les données inutiles!
 
-Afin de s'attaquer à ces problèmes, les informaticiens ont investi plus de temps et d'efforts dans les connexions série. Ils ont pu atteindre des vitesses de transfert sans précédent et comme les câbles série n'ont qu'une seule ligne de données à travers laquelle les données transitent, "CrossTalk" est un problème disparu depuis longtemps!
-Certaines connexions série et ports à mentionner sont SATA et SAS, les connecteurs utilisés pour connecter les disques durs et les SSD, PCIe l'emplacement utilisé pour connecter les cartes graphiques et autres cartes d'extension comme les cartes réseau, les emplacements DIMM utilisés pour brancher votre RAM sur la carte mère, les slots M.2 qui sont utilisés pour connecter des SSD modernes qui ont un très petit facteur de forme, certains peuvent être aussi petits qu'un chewing-gum et sont compatibles avec les protocoles de communication, certains sont vieux comme AHCI, et d'autres sont nouveaux et rapides comme NVMe, sans oublier les ports USB qui connectent tous vos périphériques.
+Afin de s'attaquer à ces problèmes, les informaticiens ont investi plus de temps et d'efforts dans les connexions série. Ils ont pu atteindre des vitesses 
+de transfert sans précédent et comme les câbles série n'ont qu'une seule ligne de données à travers laquelle les données transitent, "CrossTalk" est un 
+problème disparu depuis longtemps!
+Certaines connexions série et ports à mentionner sont SATA et SAS, les connecteurs utilisés pour connecter les disques durs et les SSD, PCIe l'emplacement 
+utilisé pour connecter les cartes graphiques et autres cartes d'extension comme les cartes réseau, les emplacements DIMM utilisés pour brancher votre 
+RAM sur la carte mère, les slots M.2 qui sont utilisés pour connecter des SSD modernes qui ont un très petit facteur de forme, certains peuvent être aussi 
+petits qu'un chewing-gum et sont compatibles avec les protocoles de communication, certains sont vieux comme AHCI, et d'autres sont nouveaux et rapides comme 
+NVMe, sans oublier les ports USB qui connectent tous vos périphériques.
 
 Notez que les slots PCIe sont à la fois parallèles et série, ce qui explique les vitesses astronomiques que ces slots peuvent atteindre!
