@@ -133,7 +133,7 @@ Composants du disque dur:
 
 la tête de lecture et d'écriture est un morceau de métal qui permet l'extraction et le stockage de données hors et dans le disque dur
 
-Le plateau est une forme circulaire de type DVD sur laquelle les données numériques sont stockées ou extraites. Il est généralement recouvert 
+Le plateau est une forme circulaire semblable à DVD sur laquelle les données numériques sont stockées ou extraites. Il est généralement recouvert 
 d'une couche magnétisée pour garantir que les données resteraient collées et ne disparaîtraient pas.
 
 Un secteur dans un disque dur est la plus petite unité possible sur la surface du plateau qui pourrait être écrite ou lue par la tête de lecture 
