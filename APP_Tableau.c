@@ -11,7 +11,7 @@ int main() {
   do{
     printf("Donner Le Nombre de prise: ");
     scanf("%d", &nbr_prise);
-  } while( nbr_prise > 15 || nbr_prise < 0 );
+  } while( nbr_prise > 15 || nbr_prise <= 0 );
 
   for(int i=0; i< nbr_prise; i++) {
     printf("Donner la temperature: ");
@@ -43,7 +43,7 @@ int main() {
       case 1:
         printf("Mesures de Temperature: \n")
         for(int i=0; i< nbr_prise; i++) {
-          printf("Mesure N°%d: %d\n", i+1, array1[i]);
+          printf("Mesure N°%d: %d\n", i+1, temperature[i]);
         }
         break;
       case 2:
@@ -54,18 +54,18 @@ int main() {
         break;
       
       case 3:
-        printf("Mesures de Temperature: \n")
+        printf("Les Mesures de Temperature: \n")
         for(int i=0; i< nbr_prise; i++) {
-          printf("Mesure N°%d: %d\n", i+1, array1[i]);
+          printf("Mesure N°%d: %d\n", i+1, temperature[i]);
         }
 
-        // Afficher les mesures de humidité
-        printf("Mesures de Humidité: \n")
+        
+        printf("Les Mesures de Humidité: \n")
         for(int i=0; i< nbr_prise; i++) {
           printf("Mesure N°%d: %d\n", i+1, humidite[i]);
         }
 
-        // Modifier une prise:
+        
         int numero;
         do{
           printf("Donner le numero de prise: ");
@@ -94,12 +94,12 @@ int main() {
 
       case 5:
         float result = 0;
-        for(int i=0; i<nbr_prise; result+= array1[i], i++);
-        printf("La moyenne de Températures: %f\n", result/nbr_temperature); 
+        for(int i=0; i<nbr_prise; result+= temperature[i], i++);
+        printf("La moyenne de Températures: %f\n", result/nbr_prise); 
 
         
         for(i=result=0; i<nbr_prise; result+= humidite[i], i++);
-        printf("La moyenne d'Humidité: %f\n", result/nbr_humidite); 
+        printf("La moyenne d'Humidité: %f\n", result/nbr_prise); 
         break;
 
       case 6:
