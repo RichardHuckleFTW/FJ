@@ -13,9 +13,6 @@ int main() {
     scanf("%d", &nbr_prise);
   } while( nbr_prise > 15 || nbr_prise < 0 );
 
-  int temperature[nbr_prise];
-  int humdite[nbr_prise];
-
   for(int i=0; i< nbr_prise; i++) {
     printf("Donner la temperature: ");
     scanf("%f", &temperature[i]);
