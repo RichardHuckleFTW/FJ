@@ -93,15 +93,13 @@ int main() {
       case 6:
         double s;
         int moy = 0;
-        for(int i=0; i<nbr_prise; moy+= humidite[i], i++);
-        moy /= nbr_humidite;
+        for(int i=0; i<nbr_prise; moy+= humidite[i]/nbr_prise, i++);
     
         for(int i=0; i<nbr_prise; i++) {
           float x = humidite[i];
           float t = (x - moy);
-          s += t*t;
+          s += (t*t)/n;
         }
-        s/=n;
         s = sqrt(s);
     
         printf("L'ecart type de l'humidité: %lf\n", s);
