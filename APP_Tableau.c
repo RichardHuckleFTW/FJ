@@ -86,8 +86,8 @@ int main() {
         printf("La moyenne de Températures: %f\n", result/nbr_prise); 
 
         
-        for(i=result=0; i<nbr_prise; result+= humidite[i], i++);
-        printf("La moyenne d'Humidité: %f\n", result/nbr_prise); 
+        for(i=result=0; i<nbr_prise; result+= humidite[i]/nbr_prise, i++);
+        printf("La moyenne d'Humidité: %f\n", result); 
         break;
 
       case 6:
