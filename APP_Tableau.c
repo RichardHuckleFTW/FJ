@@ -54,18 +54,6 @@ int main() {
         break;
       
       case 3:
-        printf("Les Mesures de Temperature: \n")
-        for(int i=0; i< nbr_prise; i++) {
-          printf("Mesure N°%d: %d\n", i+1, temperature[i]);
-        }
-
-        
-        printf("Les Mesures de Humidité: \n")
-        for(int i=0; i< nbr_prise; i++) {
-          printf("Mesure N°%d: %d\n", i+1, humidite[i]);
-        }
-
-        
         int numero;
         do{
           printf("Donner le numero de prise: ");
