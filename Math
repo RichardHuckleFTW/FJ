@@ -1,0 +1,7 @@
+1)x appartient à R+ donc:
+  i) x>0 equivaut à x+1>1
+  ii) x>0 equivaut à x+2>2 
+  i et ii => (x+1)/(x+2)>1/2
+
+2)]−∞,12] est minorant de A et 1/2 est le plus grand reel des minorant donc min A=1/2
+3)lim x→+∞ f(x)=x/x=1 donc f est majorée par]1,+∞[ et puisque 1 est le plus petit des majorant alors sup A=1
