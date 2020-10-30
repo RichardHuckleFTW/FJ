@@ -31,7 +31,7 @@ int main() {
         str[strlen(str)-1] = '\0';
         // ici, on remplace le '\n' a la fin du string avec '\0' pour signialer
         // la fin du mot reele;
-        printf("%s\n", str);
+        printf("La chaine: %s\n\n\n", str);
         char currentWord[] = "";
         int start = 0, finish = 0, count = 0, status = 0;
         for(int i=0; i<strlen(str); i++) {
