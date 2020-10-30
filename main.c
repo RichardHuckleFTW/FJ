@@ -29,8 +29,7 @@ int main() {
         str[strlen(str)-1] = '\0';
         printf("%s\n", str);
         char currentWord[] = "";
-        int start = 0, finish = 0;
-        int count = 0, l = 0, status = 0;
+        int start = 0, finish = 0, count = 0, status = 0;
         for(int i=0; str[i] != '.'; i++) {
           if(status){
             if(str[i] == ' ') {
