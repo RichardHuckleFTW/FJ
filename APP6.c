@@ -69,7 +69,7 @@ int main() {
         break;
       }
       case 3:{
-        int pos, last = 7, len = 7;
+        int pos, len = 7;
         char s[] = "c'est notre sixieme prosit pour cette annee";
         char list[MAX][MAX] = {"c'est", "notre", "sixieme", "prosit", "pour", "cette", "annee"};
         char randomList[MAX][MAX] = {}, orders[MAX][MAX], str[MAX], aux[MAX];
