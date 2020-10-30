@@ -16,7 +16,7 @@ int main() {
       "3: Construire une phrase\n"
       "0: Quitter\n"); 
       scanf("%d", &choix);
-      getchar();
+      getchar(); // equivalent de fflush(stdin);
     }while(choix < 0 || choix > 3);
     if(!choix) return 0; 
 
@@ -54,6 +54,7 @@ int main() {
         int count = 0;
         printf("Donner un mot: ");
         scanf("%s", str);
+        getchar();
         for(int i=0; i<strlen(str); i++) {
           if(strchr(voyels, str[i])){
             printf("%-3c", str[i]);
