@@ -26,7 +26,11 @@ int main() {
         printf("Donner une phrase: ");
         char str[MAX];
         fgets(str, MAX, stdin);
+        // utilisation de getchar() ou fflush(stdin) n'est pas necessaire
+        // car fgets prend le contenu de "Buffer" aver le '\n';
         str[strlen(str)-1] = '\0';
+        // ici, on remplace le '\n' a la fin du string avec '\0' pour signialier
+        // la fin du mot reele;
         printf("%s\n", str);
         char currentWord[] = "";
         int start = 0, finish = 0, count = 0, status = 0;
