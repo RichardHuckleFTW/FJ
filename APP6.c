@@ -30,9 +30,9 @@ int main() {
         printf("%s\n", str);
         char currentWord[] = "";
         int start = 0, finish = 0, count = 0, status = 0;
-        for(int i=0; str[i] != '.'; i++) {
+        for(int i=0; i<strlen(str); i++) {
           if(status){
-            if(str[i] == ' ') {
+            if(str[i] == ' ' || str[i] == '.') {
               printf("Mot %d: ", count);
               for(int k=start; k<=finish; k++) printf("%c", str[k]);
               printf("\n");
@@ -46,10 +46,6 @@ int main() {
             status = !status;
           }
         }
-
-        printf("Mot %d: ", count);
-        for(int k=start; k<=finish; k++) printf("%c", str[k]);
-        printf("\n");
         break;
       }
       case 2:{
