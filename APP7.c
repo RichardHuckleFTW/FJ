@@ -14,7 +14,7 @@ typedef struct participant{
 int main(void) {
   int hotels[nHotels] = { 0, 15, 35};
   int meals[nMeals] = { 0, 50, 75 , 125 };
-  int choix, n=0, cin, pos, montant=0;
+  int choix, cin, pos, montant=0, n=0;
   participant p, ps[30]; 
   
   while(1) {
@@ -62,6 +62,10 @@ int main(void) {
         scanf("%d", &cin);
         getchar();
         for(int i=-1; i<n && ps[i].id != cin; pos=++i);
+        if(i==n) {
+          printf("Le participant n'existe pas\n");
+          break;
+        }
         int choixRepas = ps[pos].choixRepas;
         int choixHotel = ps[pos].choixHotel;
         montant += meals[choixRepas];
@@ -87,6 +91,10 @@ int main(void) {
         scanf("%d", &cin);
         getchar();
         for(int i=-1; i<n && ps[i].id!=cin; pos=++i);
+        if(i==n) {
+          printf("Le participant n'existe pas\n");
+          break;
+        }
         for(int i=pos+1; i<n; i++) {
           ps[i-1] = ps[i];
         }
