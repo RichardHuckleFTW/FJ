@@ -1,20 +1,20 @@
-#include <stdio.h>
+#include "stdio.h"
 #include "string.h"
 
 #define nHotels 3
 #define nMeals 4
 
 
-typedef struct participant{
+typedef struct {
   int choixHotel, choixRepas;
   char name[40], surname[40]; 
   int id;
 } participant;
 
-int main(void) {
+int main() {
   int hotels[nHotels] = { 0, 15, 35};
   int meals[nMeals] = { 0, 50, 75 , 125 };
-  int choix, cin, pos, montant=0, n=0;
+  int choix, n=0, cin, pos, montant=0;
   participant p, ps[30]; 
   
   while(1) {
@@ -41,18 +41,18 @@ int main(void) {
         scanf("%d", &(p.id));
         getchar();
         printf("Choisissez un Repas: \n"
-        "0: Pas de choix\n" 
+        "0: Pas de choix (%d DT)\n" 
         "1: Dejeuner (%d DT)\n"
         "2: Dîner (%d DT)\n"
         "3: Dejeuner et Dîner (%d DT)\n"
-        , meals[0], meals[1], meals[2]);
+        , meals[0], meals[1], meals[2], meals[3]);
         scanf("%d", &(p.choixRepas));
         getchar();
         printf("Choisissez un Hotel: \n"
         "0: Pas de choix\n" 
         "1: Hotel 4 etoiles (%d DT)\n"
         "2: Hotel 5 etoiles (%d DT)\n"
-        , hotels[0], hotels[1]);
+        , hotels[1], hotels[2]);
         scanf("%d", &(p.choixHotel));
         getchar();
         ps[n++] = p;
@@ -62,7 +62,7 @@ int main(void) {
         scanf("%d", &cin);
         getchar();
         for(int i=-1; i<n && ps[i].id != cin; pos=++i);
-        if(i==n) {
+        if(pos==n) {
           printf("Le participant n'existe pas\n");
           break;
         }
@@ -75,23 +75,30 @@ int main(void) {
         break;
       case 3:
         printf("0: Les participants sans critére\n"
-        "1: Les participants qui ont choisi l'hotel 4 etoiles:\n"
+        "1: Les participants qui ont choisi l'hotel 4 etoiles\n"
         "2: Les participants qui ont choisi l'hotel 5 etoiles\n"
         );
         scanf("%d", &choix);
         getchar();
-        for(int i=0; i<n; i++) {
-          if(ps[i].choixHotel == choix) {
-            printf("Name: %s, Hotel: %d\n", ps[i].name, ps[i].choixHotel);
-          }
-        }  
+        if(!choix){
+          for(int i=0; i<n; i++) {
+            printf("Name: %s\n, Surname: %s, Id: %d, Hotel: %d, Repas: %d\n"
+                   ,ps[i].name, ps[i].surname, ps[i].id, ps[i].choixHotel, ps[i].choixRepas);
+          } 
+        } else {
+          for(int i=0; i<n; i++) {
+            if(ps[i].choixHotel == choix) {
+              printf("Name: %s, Hotel: %d\n", ps[i].name, ps[i].choixHotel);
+            }
+          }  
+        }
         break;
       case 4:
         printf("Donner le cin du participant a supprimer: ");
         scanf("%d", &cin);
         getchar();
         for(int i=-1; i<n && ps[i].id!=cin; pos=++i);
-        if(i==n) {
+        if(pos==n) {
           printf("Le participant n'existe pas\n");
           break;
         }
