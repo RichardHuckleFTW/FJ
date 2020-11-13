@@ -2,13 +2,6 @@
 #include "string.h"
 
 #define nDeps 20
-#define RED     "\x1b[31m"
-#define GREEN   "\x1b[32m"
-#define YELLOW  "\x1b[33m"
-#define BLUE    "\x1b[34m"
-#define MAGENTA "\x1b[35m"
-#define CYAN    "\x1b[36m"
-#define RESET   "\x1b[0m"
 
 typedef struct {
   char ville[20], type[30], resp[20];
@@ -17,16 +10,12 @@ typedef struct {
 } dep;
 
 int main() {
-  int choix, n=3, id, posDep, max=0, sum=0, posMax=0, pos, m, test, posRay;
+  int choix, n=0, id, posDep, max=0, sum=0, posMax=0, pos, m, test, posRay;
   char ville[20], type[30], resp[20];
-  dep deps[nDeps]={
-    {.id=1, .ville="Tunis", .ray = 4, .type = "vest", .resp = "Firas", .nbr = {1,1,1,1}},
-    {.id=2, .ville="Tunis", .ray = 4, .type = "vest", .resp = "Sarra", .nbr = {0,0,0,0}},
-    {.id=3, .ville="Sousse", .ray = 4, .type = "alim", .resp = "Rafik", .nbr = {0,0,0,0}}
-  };
+  dep deps[nDeps];
   while(1) {
     do{
-      printf(GREEN
+      printf(
           "------------------------------------------------------------------------------------------------\n"
           "1: Ajouter un nouveau dépot\n"
           "2: Ajouter des produits dans le rayon vide\n"
@@ -36,48 +25,48 @@ int main() {
           "6: calculer le nombre de depots situés a une ville\n"
           "7: Afficher les depots ou le nombre de produits dans chaque rayon est inferieur a un seuil max\n"
           "8: Supprimer le premier depot vide\n"
-          "0: Quittez\n"BLUE
-          "Donner Votre Choix: "RESET
+          "0: Quittez\n\n"
+          "Donner Votre Choix: "
           );
       scanf("%d", &choix);
       getchar();
     }while(choix > 8 || choix < 0);
     switch(choix){
       case 1:
-        printf(BLUE"Donner l'identifiant de depot: "RESET);
+        printf("Donner l'identifiant de depot: ");
         scanf("%d", &deps[n].id);
         getchar();
         do{
-          printf(BLUE"Donner la ville de depot (Tunis, Sousse, Bizerte): "RESET);
+          printf("Donner la ville de depot (Tunis, Sousse, Bizerte): ");
           fgets(ville, 20, stdin);
           ville[strlen(ville) - 1] = '\0';
         } while(strcmp(ville, "Tunis") && strcmp(ville, "Sousse") && strcmp(ville, "Bizerte"));
         strcpy(deps[n].ville, ville);
         do{
-          printf(BLUE"Donner le type de depot (vest, alim, pdr): "RESET);
+          printf("Donner le type de depot (vest, alim, pdr): ");
           fgets(type, 30, stdin);
           type[strlen(type) - 1] = '\0';
         }while(strcmp(type, "vest") && strcmp(type, "alim") && strcmp(type, "pdr"));
         strcpy(deps[n].type, type);
-        printf(BLUE"Donner le Nombre de rayon: "RESET);
+        printf("Donner le Nombre de rayon: ");
         scanf("%d", &deps[n].ray);
         getchar();
         for(int i=0; i<n; deps[n].nbr[i++]=0);
-        printf(BLUE"Donner le nom de responsable: "RESET);
+        printf("Donner le nom de responsable: ");
         fgets(resp, 20, stdin);
         resp[strlen(resp) - 1] = '\0';
         strcpy(deps[n].resp, resp);
         n++;
-        printf(MAGENTA"Depot Crée!\n"RESET);
-        printf(MAGENTA"Total Depot: %d\n"RESET, n);
+        printf("Depot Crée!\n");
+        printf("Total Depot: %d\n", n);
       break;
       case 2:
-        printf(BLUE"Donner id de depot: "RESET);
+        printf("Donner id de depot: ");
         scanf("%d", &id);
         getchar();
         for(int i=-1; i<n && deps[i].id != id; posDep=++i);
         if(posDep == n) {
-          printf(RED"Depot n'existe pas\n"RESET);
+          printf("Depot n'existe pas\n");
           break;
         }
         posRay = -1;
@@ -89,24 +78,24 @@ int main() {
         }
 
         if(posRay == -1) {
-          printf(YELLOW"Tous les Rayons sont remplis\n"RESET);
+          printf("Tous les Rayons sont remplis\n");
           break;
         }
         do{
-          printf(BLUE"Donner la quantité (moins que 200): "RESET);
+          printf("Donner la quantité (moins que 200): ");
           scanf("%d", &(deps[posDep].nbr[posRay]));
           getchar();
         } while(deps[posDep].nbr[posRay] > 200 || deps[posDep].nbr[posRay] <= 0);
       break;
       case 3:
         do{
-          printf(BLUE"Donner le critere de type: "RESET);
+          printf("Donner le critere de type: ");
           fgets(type, 30, stdin);
           type[strlen(type) - 1] = '\0';
         }while(strcmp(type, "vest") && strcmp(type, "alim") && strcmp(type, "pdr"));
         for(int i=0; i<n; i++) {
           if(!strcmp(deps[i].type, type))
-            printf(MAGENTA"Responsable: %s, Depot id: %d\n"RESET,deps[i].resp, deps[i].id);
+            printf("Responsable: %s, Depot id: %d\n",deps[i].resp, deps[i].id);
         }
       break;
       case 4:
@@ -122,35 +111,35 @@ int main() {
             posMax = i;
           }
         }  
-        printf(MAGENTA"Responsable: %s, Ville: %s, Quantité: %d\n"RESET, deps[posMax].resp, deps[posMax].ville, max);
+        printf("Responsable: %s, Ville: %s, Quantité: %d\n", deps[posMax].resp, deps[posMax].ville, max);
         max=0;
         break;
       case 5:
-        printf(BLUE"Donner id de depot: "RESET);
+        printf("Donner id de depot: ");
         scanf("%d", &id);
         getchar();
         for(int i=-1; i<n && deps[i].id != id; pos=++i);
         if(pos == n) {
-          printf(RED"Depot n'existe pas\n"RESET);
+          printf("Depot n'existe pas\n");
           break;
         }
-        printf(BLUE"Donner le nouveau responsable: "RESET);
+        printf("Donner le nouveau responsable: ");
         fgets(resp, 20, stdin);
         resp[strlen(resp) - 1] = '\0';
         strcpy(deps[pos].resp, resp);
       break;
       case 6:
-        printf(BLUE"Donner la ville: "RESET);
+        printf("Donner la ville: ");
         fgets(ville, 20, stdin);
         ville[strlen(ville)-1] = '\0';
         for(int i=0; i<n; i++) {
           if(strcmp(deps[i].ville, ville)) {
-            printf(MAGENTA"Id: %d, Ville: %s\n"RESET, deps[i].id, deps[i].ville);
+            printf("Id: %d, Ville: %s\n", deps[i].id, deps[i].ville);
           }
         }
       break;
       case 7:
-        printf(BLUE"Donner la seuil max: "RESET);
+        printf("Donner la seuil max: ");
         scanf("%d", &m);
         getchar();
         for(int i=0; i<n; i++) {
@@ -162,7 +151,7 @@ int main() {
             }
           }
           if(test) {
-            printf(MAGENTA"Id: %d\n"RESET, deps[i].id);
+            printf("Id: %d\n", deps[i].id);
             break;
           }
         }
@@ -177,7 +166,7 @@ int main() {
             }
           }
           if(test) {
-            printf(MAGENTA"Depot d'identificateur %d va etre supprimé\n"RESET, deps[i].id);
+            printf("Depot d'identificateur %d va etre supprimé\n", deps[i].id);
             for(int c=i+1; c<n; c++) {
               deps[c-1] = deps[c];
             }
