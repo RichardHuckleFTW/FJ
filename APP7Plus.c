@@ -20,9 +20,9 @@ int main() {
   int choix, n=3, id, posDep, max=0, sum=0, posMax=0, pos, m, test, posRay;
   char ville[20], type[30], resp[20];
   dep deps[nDeps]={
-    {.id=1, .ville="Tunis", .ray = 4, .type = "vestimentaires", .resp = "Firas", .nbr = {1,1,1,1}},
-    {.id=2, .ville="Tunis", .ray = 4, .type = "vestimentaires", .resp = "Sarra", .nbr = {0,0,0,0}},
-    {.id=3, .ville="Sousse", .ray = 4, .type = "alimentaires", .resp = "Rafik", .nbr = {0,0,0,0}}
+    {.id=1, .ville="Tunis", .ray = 4, .type = "vest", .resp = "Firas", .nbr = {1,1,1,1}},
+    {.id=2, .ville="Tunis", .ray = 4, .type = "vest", .resp = "Sarra", .nbr = {0,0,0,0}},
+    {.id=3, .ville="Sousse", .ray = 4, .type = "alim", .resp = "Rafik", .nbr = {0,0,0,0}}
   };
   while(1) {
     do{
@@ -54,10 +54,10 @@ int main() {
         } while(strcmp(ville, "Tunis") && strcmp(ville, "Sousse") && strcmp(ville, "Bizerte"));
         strcpy(deps[n].ville, ville);
         do{
-          printf(BLUE"Donner le type de depot (Vestimentaires, Alimentaires, Pieces de rechanges): "RESET);
+          printf(BLUE"Donner le type de depot (vest, alim, pdr): "RESET);
           fgets(type, 30, stdin);
           type[strlen(type) - 1] = '\0';
-        }while(strcmp(type, "vestimentaires") && strcmp(type, "alimentaires") && strcmp(type, "pieces de rechanges"));
+        }while(strcmp(type, "vest") && strcmp(type, "alim") && strcmp(type, "pdr"));
         strcpy(deps[n].type, type);
         printf(BLUE"Donner le Nombre de rayon: "RESET);
         scanf("%d", &deps[n].ray);
@@ -103,7 +103,7 @@ int main() {
           printf(BLUE"Donner le critere de type: "RESET);
           fgets(type, 30, stdin);
           type[strlen(type) - 1] = '\0';
-        }while(strcmp(type, "vestimentaires") && strcmp(type, "alimentaires") && strcmp(type, "pieces de rechanges"));
+        }while(strcmp(type, "vest") && strcmp(type, "alim") && strcmp(type, "pdr"));
         for(int i=0; i<n; i++) {
           if(!strcmp(deps[i].type, type))
             printf(MAGENTA"Responsable: %s, Depot id: %d\n"RESET,deps[i].resp, deps[i].id);
